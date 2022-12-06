@@ -1,0 +1,83 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h1>
+            Angular CRUD
+        </h1>
+        <div class="d-flex">
+            <button  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-sucess ">ADD EMPLOYEE</button>
+        </div>
+    </div>
+
+</nav>
+<table class="table mt-3">
+    <thead>
+        <th scope="col">Employee ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email ID</th>
+        <th scope="col">mOBILE NO</th>
+        <th scope="col">salary</th>
+        <th scope="col">Action</th>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Subham</td>
+            <td>das</td>
+            <td>subhamkvgms112@gmail.com</td>
+            <td>9777505681</td>
+            <td>10,000</td>
+            <td>10,000</td>
+<td>
+    <button class="btn btn-info">Edit</button>
+    <button class="btn btn-danger mx-3">Delete</button>
+</td>
+        </tr>
+    </tbody>
+</table>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Detaild</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" placeholder="FirstName" class="form-control" id="exampleInputEmail1" >
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                  <input type="text"  placeholder="LastName" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email Adress</label>
+                    <input type="email" placeholder="=Email adress" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                    <input type="number" placeholder="Mobile number" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Salary</label>
+                    <input type="number" placeholder="Salary"  class="form-control" id="exampleInputPassword1">
+                  </div>
+              </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

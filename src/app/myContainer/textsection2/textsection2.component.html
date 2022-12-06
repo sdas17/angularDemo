@@ -1,0 +1,63 @@
+<div class="txt-sec">
+    <h2 class="heading-blur">Devlop across all paltform</h2>
+    <p>Learn one way to build applications with angular and reuse your code and ability</p>
+<a href="#"class ='btn btn-blue'>Learn More</a>
+<div class="clear"></div>
+</div>
+<p>{{ todos }}</p>
+
+<ul>
+    <li *ngFor="let item of todos">
+      {{item}}
+    </li>
+  </ul>
+  <ul>
+    <input type="text" value="item">
+    <li *ngFor="let item of todos">
+      {{item}}
+     
+    </li>
+  </ul>
+  <button type="button" (click)="addItem()">
+    Add item
+  </button>
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+  
+  <app-numeric-input
+       [value]='myFirstValue' 
+       (resetClicked)="onReset()">
+  </app-numeric-input><br/>
+  <app-numeric-input></app-numeric-input><br/>
+  <app-numeric-input></app-numeric-input><br/>
+  <app-numeric-input></app-numeric-input><br/>
+  <app-numeric-input></app-numeric-input><br/>
+<app-numeric-input></app-numeric-input><br/>
+<table>
+    <thead>
+    <tr>
+      <td>Car Model</td>
+      <td>Power</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VW Käfer 1936</td>
+            <td>
+              <app-input-ps-kw
+                 value="kaeferPower"  
+                 uom="kaeferUom"      
+              ></app-input-ps-kw>
+            </td>
+          </tr>
+          <tr>
+            <td>Ferrari LaFerrari</td>
+            <td>
+              <app-input-ps-kw value="588" uom="KW"></app-input-ps-kw>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+        <h1>Our VW K&auml;fer has {{ kaeferPower }} {{ kaeferUom }}</h1>

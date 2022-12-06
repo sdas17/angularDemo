@@ -1,0 +1,18 @@
+<p>demo works!</p>
+<table class="tale table-bordered">
+    <tr class="bg-primary">
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>city</th>
+        <th>companyName</th>
+    </tr>
+<tr *ngFor="let item of Users;">
+    <td > {{item.id}}</td>
+    <td >{{item.name}}</td>
+    <td >{{item.email}}</td>
+    <td >{{item.address.city}}</td>
+    <td>{{item.company.name}}</td>
+</tr>
+</table>
+<app-crud></app-crud>
