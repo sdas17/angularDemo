@@ -20,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CrudComponent } from './crud/crud.component';
 import { EmployeeDashbaordComponent } from './employee-dashbaord/employee-dashbaord.component';
 import { ReactiveFormsModule } from '@angular/forms';  
-
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 myContainer
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ myContainer
     BrowserModule, HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ButtonModule,
+    RippleModule
 
     
   ],
